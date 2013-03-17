@@ -5,6 +5,7 @@ define nginx::vhost (
 	$file = $name,
 	$server_name = $name,
 	$index = 'index.html',
+	$fastcgi_socket = '127.0.0.1:9000',
 	$template = 'nginx/vhost.conf.erb',
 ) {
 	include nginx
